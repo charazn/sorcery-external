@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'oauths/oauth'
+
+  get 'oauths/callback'
+
   root 'users#index'
 
   resources :user_sessions, only: :create
