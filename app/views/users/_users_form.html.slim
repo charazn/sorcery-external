@@ -7,4 +7,4 @@
     = f.input :password_confirmation
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, "#{f.object.new_record? ? 'Create' : 'Update'}"
