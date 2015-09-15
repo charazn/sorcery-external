@@ -15,7 +15,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.5' # Configure application.scss, @import "bootstrap-sprockets"; @import "bootstrap";
                                  # AND application.js, //= require bootstrap-sprockets below //= require jquery and //= require jquery_ujs
 gem 'sass-rails', '>= 3.2'
-gem 'simple_form' # rails g simple_form:install
+gem 'simple_form' # rails g simple_form:install --bootstrap
 gem 'sorcery' # rails g sorcery:install
               # config.include Sorcery::TestHelpers::Rails::Controller, :type => :controller
 
