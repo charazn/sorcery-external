@@ -3,7 +3,10 @@ h1 Listing users
 table
   thead
     tr
+      th Facebook ID
       th Email
+      th Name
+      th Gender
       th Crypted password
       th Salt
       th
@@ -13,7 +16,10 @@ table
   tbody
     - @users.each do |user|
       tr
+        td = user.authentications.first.uid if user.authentications.first
         td = user.email
+        td = user.name
+        td = user.gender
         td = user.crypted_password
         td = user.salt
         td = link_to 'Show', user

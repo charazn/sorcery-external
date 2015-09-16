@@ -1,8 +1,17 @@
 p#notice = notice
 
 p
+  strong Facebook ID:
+  = @user.authentications.first.uid if @user.authentications.first
+p
   strong Email:
   = @user.email
+p
+  strong Name:
+  = @user.name
+p
+  strong Gender:
+  = @user.gender
 p
   strong Crypted password:
   = @user.crypted_password

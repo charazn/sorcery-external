@@ -25,6 +25,6 @@ class OauthsController < ApplicationController
 
   private
     def auth_params
-      params.permit(:code, :provider) # Where to allow these :user_id, :provider, :uid under strong params?
+      params.permit(:code, :provider)
     end
 end
