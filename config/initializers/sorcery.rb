@@ -120,7 +120,8 @@ Rails.application.config.sorcery.configure do |config|
   config.facebook.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=facebook"
   config.facebook.user_info_mapping = { :email => "email" } # :name => "name", :username => "username"
   config.facebook.access_permissions = ["email"] #"publish_actions"
-  config.facebook.user_info_path = "me?fields=id,name,email,first_name,last_name"
+  config.facebook.user_info_path = "me?fields=id,name,email,first_name,last_name,gender,age_range"
+  config.facebook.scope = "email, user_friends"
   config.facebook.display = "page"
   config.facebook.api_version = "v2.4"
 
