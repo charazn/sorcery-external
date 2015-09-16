@@ -20,11 +20,11 @@ gem 'sorcery' # rails g sorcery:install
               # config.include Sorcery::TestHelpers::Rails::Controller, :type => :controller
 
 group :development, :test do
-  gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'dotenv-rails'
   gem 'rubocop', require: false
+  gem 'pry-byebug'
 end
 
 group :test do
