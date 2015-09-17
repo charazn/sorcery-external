@@ -7,6 +7,7 @@ table
       th Email
       th Name
       th Gender
+      th Age Range
       th Crypted password
       th Salt
       th
@@ -20,6 +21,7 @@ table
         td = user.email
         td = user.name
         td = user.gender
+        td = user.age_range["min"]
         td = user.crypted_password
         td = user.salt
         td = link_to 'Show', user
