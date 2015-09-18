@@ -121,7 +121,8 @@ Rails.application.config.sorcery.configure do |config|
   config.facebook.user_info_mapping = { :email => "email", :name => "name", :gender => "gender", :age_range => "age_range" }
   config.facebook.access_permissions = ["email"] #"publish_actions"
   config.facebook.user_info_path = "me?fields=id,name,email,first_name,last_name,gender,age_range"
-  config.facebook.scope = "email, user_friends"
+  config.facebook.scope = "email,user_friends"
+  # config.facebook.image_size = "large" # As per https://github.com/mkdynamic/omniauth-facebook
   config.facebook.display = "page"
   config.facebook.api_version = "v2.4"
 
